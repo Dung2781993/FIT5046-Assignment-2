@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="yihang.wang.itriage.PatientActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Search  I"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Patient First Name"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/search_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Enter First Name"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Patient Last Name"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/search_lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Enter Last Name"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/search_searchI"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="searchI"
+            android:padding="2dp"
+            android:text="Search" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Search  II"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Symptoms"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/search_symptoms"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Injuries"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/search_injuries"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Geo Info"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/search_geoInfo"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/search_searchII"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="searchII"
+            android:padding="2dp"
+            android:text="Search" />
+        
+        <Button
+            android:id="@+id/search_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="cancel"
+            android:padding="2dp"
+            android:text="Cancel" />
+        
+    </LinearLayout>
+
+</ScrollView>

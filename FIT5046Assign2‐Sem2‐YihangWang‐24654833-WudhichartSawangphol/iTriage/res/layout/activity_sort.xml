@@ -1,0 +1,314 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="yihang.wang.itriage.SortActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Patient  Info"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="First Name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/sort_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter First Name"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Last Name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/sort_lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter Last Name"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Sort  Triage"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Eye Open"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_eyeOpen"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Verbal Response"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_verbalResponse"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Motor Response"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_motorResponse"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Respiratory Rate"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_respiratoryRate"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Systolic Blood Pressure"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_bloodPressure"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Priority"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sort_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Symptoms"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_symptoms"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Injuries"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_injuries"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Geo Info"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/sort_geoInfo"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" >
+                </Spinner>
+            </TableRow>
+        </TableLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/sort_priorityButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:onClick="priority"
+                android:padding="2dp"
+                android:text="Priority" />
+
+            <Button
+                android:id="@+id/sort_saveButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="save"
+                android:padding="2dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/sort_cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:padding="2dp"
+                android:text="cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

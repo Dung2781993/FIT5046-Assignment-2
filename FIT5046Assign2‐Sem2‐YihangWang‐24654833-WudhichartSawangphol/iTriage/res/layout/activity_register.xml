@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="yihang.wang.itriage.RegisterActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+     
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Sign  Up"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+
+            <TableRow android:padding="2dp">
+
+                <TextView android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:text="User Name (*)"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/register_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter User Name"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:padding="2dp">
+
+                <TextView android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:text="Password (*)"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/register_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter Password"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+            
+             <TableRow android:padding="2dp">
+
+                <TextView android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:text="First Name (*)"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/register_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter First Name"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+            
+             <TableRow android:padding="2dp">
+
+                <TextView android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:text="Last Name (*)"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/register_lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter Last Name"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+            
+             <TableRow android:padding="2dp">
+
+                <TextView android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:text="Organisation (*)"
+                    android:textSize="18sp" />
+
+                <EditText android:padding="2dp"
+                    android:id="@+id/register_organisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter Organisation"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+            
+             <TableRow android:padding="2dp">
+
+                <TextView android:padding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:text="Position (*)"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/register_position"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:textSize="14sp"
+                    android:spinnerMode="dialog">
+                </Spinner>
+            </TableRow>
+        </TableLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/register_submitButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:onClick="register"
+                android:padding="2dp"
+                android:text="Register" />
+
+            <Button android:padding="2dp"
+                android:id="@+id/register_cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:text="Cancel" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

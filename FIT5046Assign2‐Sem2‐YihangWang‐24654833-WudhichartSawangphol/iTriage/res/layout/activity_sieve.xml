@@ -1,0 +1,462 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="yihang.wang.itriage.SieveActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Patient  Info"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="First Name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/sieve_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter First Name"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Last Name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/sieve_lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:hint="Please Enter Last Name"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Sieve  Triage"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <LinearLayout
+            android:id="@+id/sieve_walkingLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Arial"
+                android:padding="2dp"
+                android:text="Walking"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/sieve_walking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <RadioButton
+                    android:id="@+id/sieve_walkingYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Yes"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/sieve_walkingNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="No"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sieve_breathingLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Arial"
+                android:padding="2dp"
+                android:text="Breathing"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/sieve_breathing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <RadioButton
+                    android:id="@+id/sieve_breathingYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/sieve_breathingNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="No"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/sieve_AOBreathingLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Airway Opened Breathing"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/sieve_AOBreathing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <RadioButton
+                        android:id="@+id/sieve_AOBreathingYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="Arial"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/sieve_AOBreathingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="Arial"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="No" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sieve_BreathingRateLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Breathing Rate"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/sieve_BreathingRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <RadioButton
+                        android:id="@+id/sieve_BreathingRateYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="Arial"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="10-29" />
+
+                    <RadioButton
+                        android:id="@+id/sieve_BreathingRateNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="Arial"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="&lt;10 Or >29" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/sieve_circulationLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:isScrollContainer="true"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Arial"
+                        android:padding="2dp"
+                        android:text="Circulation"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/sieve_circulation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="2dp" >
+
+                        <RadioButton
+                            android:id="@+id/sieve_circulationYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:fontFamily="Arial"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text=">120" />
+
+                        <RadioButton
+                            android:id="@+id/sieve_circulationNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="Arial"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="&lt;120 Or =120" >
+                        </RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Arial"
+                        android:padding="2dp"
+                        android:text="Priority"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/sieve_priority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="Arial"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Arial"
+                        android:padding="2dp"
+                        android:text="Symptoms"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/sieve_symptoms"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="Arial"
+                        android:spinnerMode="dialog"
+                        android:textSize="14sp" >
+                    </Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Arial"
+                        android:padding="2dp"
+                        android:text="Injuries"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/sieve_injuries"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="Arial"
+                        android:spinnerMode="dialog"
+                        android:textSize="14sp" >
+                    </Spinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Arial"
+                        android:padding="2dp"
+                        android:text="Geo Info"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/sieve_geoInfo"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="Arial"
+                        android:spinnerMode="dialog"
+                        android:textSize="14sp" >
+                    </Spinner>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/sieve_priorityButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:onClick="priority"
+                android:padding="2dp"
+                android:text="Priority" />
+
+            <Button
+                android:id="@+id/sieve_saveButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="save"
+                android:padding="2dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/sieve_cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:padding="2dp"
+                android:text="cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,289 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="yihang.wang.itriage.PatientActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Patient  Info"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp" >
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Patient ID"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_patientId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="First Name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Last Name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Triage Type"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Priority"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Symptoms"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Injuries"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_injuries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Triage Date"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Triage Time"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Rescuer Info"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_rescuerInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+            
+            <TableRow android:padding="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Arial"
+                    android:padding="2dp"
+                    android:text="Geo Info"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/patientInfo_geoInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="Arial"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+        <Button android:padding="2dp"
+                android:id="@+id/patient_cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:text="Cancel" />
+    </LinearLayout>
+
+</ScrollView>
